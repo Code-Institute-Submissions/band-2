@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700');
 
+
+/*-- GENERAL --------------------------------------------------------------------*/
+
+
 body {
      font-family: Roboto, sans-serif;
     font-weight: 300;
@@ -14,19 +18,13 @@ p {
     font-size: 20px;
 }
 
-.tartan-background {
-    background: url(../images/tartan-background.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 200px;
+.pale-background {
+    background-color: #DAE0E5;
 }
 
-.tartan-bar {
-    padding-left: 0;
-    padding-right: 0;
-}
+
+/*-- NAVBAR --------------------------------------------------------------------*/
+
 
 .nav-container {
     background-color: transparent;
@@ -157,42 +155,143 @@ p {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.pale-background {
-    background-color: #DAE0E5;
+
+
+/*-- LOGO --------------------------------------------------------------------*/
+
+
+
+.tartan-background {
+    background: url(../images/tartan-background.jpg) center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 200px;
 }
+
+.tartan-bar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*-- MAIN --------------------------------------------------------------------*/
+
+
 
 .next-show {
     background-color: #F7F9F9;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
+    
 }
 
-.next-show-heading {
+.next-show-heading, .next-show-text, .next-show-picture {
     margin-top: 0;
+    padding: 20px;
 }
+
+.next-show-link {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.next-show-link a {
+    text-decoration: none;
+}
+
+.next-show-link a:hover {
+    text-decoration: none;
+}
+
+
+
+/*-- PHOTOS --------------------------------------------------------------------*/
+
+
+
+
+.photo-bar {
+    background: url(../images/tattoo.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+}
+
+
+
+
+/*-- SOCIAL --------------------------------------------------------------------*/
+
+
+.social {
+    margin: 50px 0;
+}
+
+
+.social-heading {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.social-links i {
+    font-size: 28px;
+    text-align: center;
+}
+
+.priority-link {
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.priority-link a {
+    text-decoration: none;
+    color: #333;
+}
+
+.priority-link a:hover {
+    color: #416777;
+}
+
+/*-- FOOTER --------------------------------------------------------------------*/
+
+
 
 footer {
     background-color: #DAE0E5;
     color: #416777;
     min-height: 75px;
     font-family: "Oswald", sans-serif;
-    font-weight: 200;
 }
 
 .footer-links {
     padding: 30px 0px;
     text-align: center;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .footer-links i {
     font-size: 28px;
+}
 
-.footer-links span a {
+.footer-links a {
     text-decoration: none;
     color: #416777;
 }
 
-.footer-links span a :hover {
+.footer-links a:hover {
     text-decoration: none;
+    color: #333;
+}
+
+.btn-lg {
+    padding-top: 0;
 }
