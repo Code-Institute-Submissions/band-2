@@ -3,13 +3,19 @@
 
 /*-- GENERAL --------------------------------------------------------------------*/
 
-
 body {
-     font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
 }
@@ -22,9 +28,17 @@ p {
     background-color: #DAE0E5;
 }
 
+.center-title {
+    text-align: center;
+}
+
+label {
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
 
 /*-- NAVBAR --------------------------------------------------------------------*/
-
 
 .nav-container {
     background-color: transparent;
@@ -159,8 +173,6 @@ p {
 
 /*-- LOGO --------------------------------------------------------------------*/
 
-
-
 .tartan-background {
     background: url(../images/tartan-background.jpg) center;
     -webkit-background-size: cover;
@@ -178,15 +190,15 @@ p {
 
 /*-- MAIN --------------------------------------------------------------------*/
 
-
-
 .next-show {
     background-color: #F7F9F9;
     padding: 50px 0;
-    
+
 }
 
-.next-show-heading, .next-show-text, .next-show-picture {
+.next-show-heading,
+.next-show-text,
+.next-show-picture {
     margin-top: 0;
     padding: 20px;
 }
@@ -209,9 +221,6 @@ p {
 
 /*-- PHOTOS --------------------------------------------------------------------*/
 
-
-
-
 .photo-bar {
     background: url(../images/tattoo.jpg) center no-repeat;
     -webkit-background-size: cover;
@@ -225,7 +234,6 @@ p {
 
 
 /*-- SOCIAL --------------------------------------------------------------------*/
-
 
 .social {
     margin: 50px 0;
@@ -260,9 +268,86 @@ p {
     color: #416777;
 }
 
+
+
+
+/*-- KONTAKT --------------------------------------------------------------------*/
+
+.kontakt-wrapper {
+    padding: 50px 0;
+    background-color: #fdfdec;
+}
+
+.kontakt-header {
+    margin: 20px 0;
+}
+
+.kontakt-sub {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.kontakt-list {
+    list-style-type: none;
+    padding: 0 0 50px 0;
+}
+
+.kontakt-list li {
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.kontakt-FA i {
+    font-size: 28px;
+}
+
+.kontakt-list a {
+    text-decoration: none;
+    color: #416777;
+}
+
+.kontakt-list a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.kontakt-form textarea {
+    height: 200px;
+}
+
+.kontakt-form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #416777;
+    border-radius: 0;
+    outline: none;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.btn-success {
+    background-color: #22597E;
+    border: none;
+}
+
+.btn-success:active {
+    background-color: #2A7150;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #446CA3;
+    border: none;
+}
+
+
+
 /*-- FOOTER --------------------------------------------------------------------*/
-
-
 
 footer {
     background-color: #DAE0E5;
