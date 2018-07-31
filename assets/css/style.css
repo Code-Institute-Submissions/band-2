@@ -29,6 +29,11 @@ p {
 
 a {
     text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 label {
@@ -51,6 +56,15 @@ label {
 .fab {
     color: #fff;
 }
+
+.white-text {
+    color: #fff;
+}
+
+.full-width {
+    width: 100vw;
+}
+
 /*-- NAVBAR --------------------------------------------------------------------*/
 
 .nav-container {
@@ -66,7 +80,7 @@ label {
 
 .navbar-nav {
     margin: 7.5px 0;
-    height: 40px;
+    height: 30px;
 }
 
 #navbar {
@@ -99,92 +113,55 @@ label {
     background-color: #416777;
 }
 
-
-
-/*-- .menu-item {
-    height: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: "Oswald", sans-serif;
-    font-weight: 200;
-}
-
-.menu-item span {
-    height: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    font-size: 12px;
-}
-
-.menu-item a span {
-    width: 100%;
-    text-decoration: none;
-    display: block;
+#navlist .nav-link {
     color: #282828;
-    background-color: #f9f7bd;
-
 }
 
-.menu-item a span:hover {
-    background-color: #282828;
+#navlist .nav-link:hover {
     color: #f9f7bd;
-}
-
-.priority-menu-item a span {
-    background-color: #136599;
-    color: #f9f7bd;
-    transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
-.priority-menu-item a span:hover {
-    color: #136599;
-    background-color: #f9f7bd;
-    transition: all 0.35s ease-in-out;
+#navlist .nav-priority-link {
+   color: #136599;
+}
+
+#navlist .nav-priority-link:hover {
+    color: #f9f7bd;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
-.picture-menu-item {}
+.nav>li>a {
+    padding-top: 5px;
+}
 
 .logo-background {
+    height: 25px;
     border-radius: 20px;
     border: 3px solid;
 }
-
-.picture-menu-item a img {
-    border-color: transparent;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.picture-menu-item a img:hover {
-    border-color: #40aeac;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-} --*/
-
 
 
 /*-- LOGO --------------------------------------------------------------------*/
 
 .logo-container {
-    height: 100vh;
-    background: url(../images/logo.png) no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #fafbf5;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 .tartan-background {
@@ -197,16 +174,17 @@ label {
 }
 
 .tartan-bar {
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
 /*-- MAIN --------------------------------------------------------------------*/
 
 .next-show {
-    background-color: #F7F9F9;
+    background-color: #2548b4;
     padding: 50px 0;
+    color: #c5b9b9;
 
 }
 
@@ -228,12 +206,22 @@ label {
     padding-bottom: 20px;
 }
 
-.next-show-link {
+.next-show-text {
     text-align: center;
     font-weight: 400;
 }
 
+.next-show-link {
+     color: #f9f7bd;
+}
 
+.next-show-link:hover {
+    color: #282828;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
 
 /*-- PHOTOS --------------------------------------------------------------------*/
 
@@ -250,11 +238,27 @@ label {
 
 
 
+/*-- INLINE KONTAKT FORM --------------------------------------------------------------------*/
+
+
+
+.form-wrapper {
+    margin: 40px;
+}
+
+
+.inline-kontakt-form-input {
+    height: 30px;
+}
+
+
+
 
 /*-- SOCIAL --------------------------------------------------------------------*/
 
 .social {
-    margin: 20px 0;
+    margin: 20px 0 0;
+    background-color: #DAE0E5;
 }
 
 
@@ -262,6 +266,7 @@ label {
     text-align: center;
     padding-top: 0;
     margin-top: 0;
+    padding-top: 20px;
     padding-bottom: 15px;
 }
 
@@ -280,7 +285,6 @@ label {
 /*-- KONTAKT --------------------------------------------------------------------*/
 
 
-
 .background-picture {
     background-color: rgb(37, 72, 180);
     background: url(../images/salute.jpg) center no-repeat;
@@ -289,10 +293,6 @@ label {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -2;
 }
 
 .wedge-left {
@@ -301,10 +301,10 @@ label {
     height: 100vh;
     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
     transform: skewX(45deg);
-    position: absolute;
+    position: relative;
     left: 0px;
     top: 0px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .wedge-right {
@@ -313,10 +313,16 @@ label {
     height: 100vh;
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
     transform: skewX(-45deg);
-    position: absolute;
+    position: relative;
     right: 0px;
     top: 0px;
-    z-index: -1;
+    z-index: 1;
+}
+
+.kontakt-wrapper {
+    position: absolute;
+    top: 95px;
+    z-index: 2;
 }
 
 .kontakt {
@@ -365,28 +371,34 @@ label {
     padding: 15px;
 }
 
-label {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-}
 
-.kontakt-form textarea {
+.kontakt-form-textarea {
     height: 150px;
 }
 
+.inline-kontakt-form-textarea {
+    height: 100px;
+}
+
 .kontakt-form-input {
-    background-color: rgba(255, 255, 255, 0.73);
+    width: 100%;
     border: none;
     border-bottom: 1px solid #416777;
     border-radius: 0;
     outline: none;
-    height: 60px;
-    width: 100%;
     font-size: 20px;
     margin: 0 0 15px 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    
+}
+
+.kontakt-page-form {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.73);
+}
+
+.kontakt-page-form-input {
+    height: 60px;
 }
 
 .btn-success {
@@ -404,6 +416,65 @@ label {
     border: none;
 }
 
+.kontakt-twitter:hover {
+    color: #1DA1F2;
+}
+
+.kontakt-facebook:hover {
+    color: #3B5998;
+}
+
+/*-- HISTORY --------------------------------------------------------------------*/
+
+.canada-photo-background {
+    background: url(../images/canada.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo-background {
+    padding-top: 70px;
+    background: url(../images/logo.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    border: 0;
+}
+
+.burns-night {
+    background-color: #bab573;
+    background-image: url('../images/burnsnight.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 700px;
+}
+
+.blue-background {
+    background-color: #95b1a9;
+}
+
+.caption {
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.text {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.last-paragraph {
+    padding-bottom: 20px;
+}
 
 
 /*-- FOOTER --------------------------------------------------------------------*/

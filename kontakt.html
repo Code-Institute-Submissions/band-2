@@ -24,22 +24,21 @@
                 <div class="navbar-header">
                     <div class="row">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
                 </div>
 
                 <div class="navbar-collapse collapse title-bar" id="navbar">
                     <ul class="nav navbar-nav">
-                        <li class="active visible-xs menu-item"><a href="index.html"><span>HOME</span></a></li>
-                        <li class="picture-menu-item hidden-xs"><a href="index.html"><img class="logo-background" src="assets/images/logo.jpg" alt="Logo"></a></li>
-                        <li class="priority-menu-item"><a href="kontakt.html"><span>KONTAKT</span></a></li>
-                        <li class=" menu-item"><a href="termine.html"><span>TERMINE</span></a></li>
-                        <li class="menu-item"><a href="geschichte.html"><span>GESCHICHTE</span></a></li>
-                        <li class="menu-item"><a href="smallpipes.html"><span>&#181;HCPD</span></a></li>
+                        <li class="menu-item"><a href="index.html"><span>HOME</span></a></li>
+                        <li class="menu-item priority-menu-item"><a href="kontakt.html"><span class="text-center">KONTAKT</span></a></li>
+                        <li class=" menu-item"><a href="termine.html"><span class="text-center">TERMINE</span></a></li>
+                        <li class="menu-item"><a href="geschichte.html"><span class="text-center">GESCHICHTE</span></a></li>
+                        <li class="menu-item"><a href="smallpipes.html"><span class="text-center">&#181;hcpd</span></a></li>
                     </ul>
                 </div>
                 <!-- /.navbar -->
@@ -56,52 +55,79 @@
     </div>
 
     <main>
-        <div class="container-fluid background-picture">
+            <div class="container-fluid background-picture">
 
-            <div class="wedge-left"></div>
-            <div class="wedge-right"></div>
+                <div class="wedge-left"></div>
+                <div class="wedge-right"></div>
 
-            
-
-            <div class="row kontakt">
-                <div class="col-md-4 col-xs-12 contact-details-container">
+                <div class="row kontakt kontakt-wrapper">
+                    <div class="col-md-4 col-xs-12 contact-details-container">
                     <h3 class="kontakt-sub">For bookings please use the form</h3>
                     <p>For general querries please choose the option that is most convinient.</p>
                     <ul class="kontakt-list">
                         <li><a href="mailto:kontakt@hcpd.de">kontakt@hcpd.de</a></li>
                         <li>+49 1520 5291061</li>
-                        <li class="kontakt-FA"><a href="https://www.facebook.com/Hamburg.Caledonian.Pipes.and.Drums" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                        <li class="kontakt-FA"><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="kontakt-FA"><a href="https://www.facebook.com/Hamburg.Caledonian.Pipes.and.Drums" target="_blank"><i class="fab fa-facebook kontakt-facebook"></i></a></li>
+                        <li class="kontakt-FA"><a href="#" target="_blank"><i class="fab fa-twitter-square kontakt-twitter"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-8 col-xs-12 form-container">
+                    <div class="col-md-8 col-xs-12 form-container">
                     <form action="" method="" name="booking" class="kontakt-form">
                         <div class="form-group">
                             <label>Your Name</label>
-                            <input type="text" required class="kontakt-form-input" id="name">
+                            <input type="text" required class="kontakt-form-input kontakt-page-form kontakt-page-form-input" id="name">
                             <label>Your Email</label>
-                            <input type="email" required class="kontakt-form-input" id="email">
+                            <input type="email" required class="kontakt-form-input kontakt-page-form kontakt-page-form-input" id="email">
                             <label>Subject</label>
-                            <input type="text" required class="kontakt-form-input" id="subject">
+                            <input type="text" required class="kontakt-form-input kontakt-page-form kontakt-page-form-input" id="subject">
                             <label>Frage</label>
-                            <textarea name="querry" required class="kontakt-form-input" id="querry"></textarea>
+                            <textarea name="querry" required class="kontakt-form-input kontakt-page-form kontakt-form-textarea" id="querry"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-success">Submit</button>
 
                     </form>
                 </div>
+                </div>
             </div>
-        </div>
-        </div>
-        
-        
-        
-        
+            
     </main>
 
-    
-    
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="social-heading">Folgen Sie die Hamburg Caledonian Pipes and Drums!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="https://www.facebook.com/Hamburg.Caledonian.Pipes.and.Drums" target="_blank"><span class="social-links fb-link"><i class="fab fa-facebook"></i></span></a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#" target="_blank"><span  class="social-links twitter-link"><i class="fab fa-twitter-square"></i></span></a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#" target="_blank"><span class="social-links yt-link"><i class="fab fa-youtube-square"></i></span></a>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-xs-3 footer-links"><span><a href="mailto:kontakt@hcpd.de">kontakt@hcpd.de</a></span></div>
+                <div class="col-xs-3 footer-links"><span>+49 1520 5291061</span></div>
+                <div class="col-xs-6 footer-links">
+                    <form>
+                        <input type="text" class="newletter-input" name="email" placeholder="Sign up for our newsletter" />
+                        <input type="submit" value="Subscribe" />
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
