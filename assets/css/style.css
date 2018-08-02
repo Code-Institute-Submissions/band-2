@@ -65,6 +65,14 @@ label {
     width: 100vw;
 }
 
+.text-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 /*-- NAVBAR --------------------------------------------------------------------*/
 
 .nav-container {
@@ -251,7 +259,27 @@ label {
     height: 30px;
 }
 
+input[type="submit"] {
+    border-radius: 7px;
+}
 
+input[type="submit"]:hover {
+    background-color: #416777;
+    color: #DAE0E5;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+}
+
+input[type="submit"]:active {
+    background-color: #DAE0E5;
+    color: #000;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+}
 
 
 /*-- SOCIAL --------------------------------------------------------------------*/
@@ -276,6 +304,7 @@ label {
     font-size: 14px;
     font-weight: 300;
     padding: 5px 0;
+    border-radius: 4px;
 }
 
 
@@ -365,6 +394,10 @@ label {
 .kontakt-list a:hover {
     text-decoration: none;
     color: #333;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
 .form-container {
@@ -459,7 +492,7 @@ label {
     background-color: #95b1a9;
 }
 
-.caption {
+.history-caption {
     position: absolute;
     top: 85%;
     text-align: center;
@@ -467,14 +500,38 @@ label {
     color: #fff;
 }
 
-.text {
+
+
+/*-- TERMINE --------------------------------------------------------------------*/
+
+
+.background-formation {
+    background-image: url('../images/hcpd-formation.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100%;
+    background-size: cover;
+    background-color: #507a40;
     margin: 0;
-    padding-top: 20px;
+    padding: 0;
 }
 
-.last-paragraph {
-    padding-bottom: 20px;
+.termine-background {
+    background-color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+    padding: 0;
 }
+
+
+
+/*-- SMALLPIPES --------------------------------------------------------------*/
+
+.smallpipes-caption {
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    padding-left: 35px;
+}
+
 
 
 /*-- FOOTER --------------------------------------------------------------------*/
@@ -504,6 +561,10 @@ footer {
 
 .footer-links a:hover {
     color: #333;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
 .newletter-input {
