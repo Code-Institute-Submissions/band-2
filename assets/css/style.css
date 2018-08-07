@@ -7,6 +7,7 @@ body {
     font-size: 20px;
     font-family: Roboto, sans-serif;
     font-weight: 300;
+    
 }
 
 h1,
@@ -62,7 +63,7 @@ label {
 }
 
 .full-width {
-    width: 100vw;
+    width: 95vw;
 }
 
 .text-padding {
@@ -88,7 +89,6 @@ label {
 
 .navbar-nav {
     margin: 7.5px 0;
-    height: 30px;
 }
 
 #navbar {
@@ -149,12 +149,14 @@ label {
     padding-top: 5px;
 }
 
-.logo-background {
-    height: 25px;
-    border-radius: 20px;
-    border: 3px solid;
+.navbar-text {
+    margin-top: 7.5px;
+    margin-bottom: 0;
 }
 
+.navbar-right {
+    margin-right: 15px;
+}
 
 /*-- LOGO --------------------------------------------------------------------*/
 
@@ -179,11 +181,24 @@ label {
     -o-background-size: cover;
     background-size: cover;
     height: 50px;
+    width: 100%;
 }
 
 .tartan-bar {
     margin: 0;
     padding: 0;
+}
+
+.language-selector {
+    text-align: right;
+}
+
+.language-link {
+    color: #dccaca;
+}
+
+.language-link:hover {
+    color: #fff;
 }
 
 
@@ -198,25 +213,26 @@ label {
 
 .next-show-picture {
     margin-top: 0;
-    padding-left: 100px;
-    padding-right: 20px;
+    float: right;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 
-.next-show-heading,
-.next-show-text {
+    .next-show-heading {
     margin-top: 0;
-    padding-left: 20px;
-    padding-right: 80px;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .next-show-text {
-    text-align: center;
+    
     font-weight: 400;
+    padding-top: 15px;
+}
+
+.pad-right {
+     padding-right: 80px;
+     text-align: left;
 }
 
 .next-show-link {
@@ -321,7 +337,7 @@ input[type="submit"]:active {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    
 }
 
 .wedge-left {
@@ -330,9 +346,9 @@ input[type="submit"]:active {
     height: 100vh;
     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
     transform: skewX(45deg);
-    position: relative;
+    position: absolute;
     left: 0px;
-    top: 0px;
+    top: 105px;
     z-index: 1;
 }
 
@@ -342,15 +358,14 @@ input[type="submit"]:active {
     height: 100vh;
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
     transform: skewX(-45deg);
-    position: relative;
+    position: absolute;
     right: 0px;
-    top: 0px;
+    top: 105px;
     z-index: 1;
 }
 
 .kontakt-wrapper {
-    position: absolute;
-    top: 95px;
+    position: relative;
     z-index: 2;
 }
 
@@ -457,15 +472,14 @@ input[type="submit"]:active {
     color: #3B5998;
 }
 
+.kontakt-container {
+    position: absolute;
+}
+
 /*-- HISTORY --------------------------------------------------------------------*/
 
-.canada-photo-background {
-    background: url(../images/canada.jpg) center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
+.photo-container {
+    padding: 0;
 }
 
 .logo-background {
@@ -494,10 +508,14 @@ input[type="submit"]:active {
 
 .history-caption {
     position: absolute;
-    top: 85%;
+    top: 80%;
     text-align: center;
     width: 100%;
     color: #fff;
+}
+
+.caption-size {
+    font-size: 5vw;
 }
 
 
@@ -533,6 +551,13 @@ input[type="submit"]:active {
 }
 
 
+.picture {
+    text-align: center;
+}
+
+.embed-responsive {
+    margin: 10px;
+}
 
 /*-- FOOTER --------------------------------------------------------------------*/
 
