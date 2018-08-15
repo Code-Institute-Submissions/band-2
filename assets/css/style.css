@@ -7,7 +7,6 @@ body {
     font-size: 20px;
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    
 }
 
 h1,
@@ -73,7 +72,6 @@ label {
     padding-bottom: 20px;
 }
 
-
 /*-- NAVBAR --------------------------------------------------------------------*/
 
 .nav-container {
@@ -134,7 +132,7 @@ label {
 }
 
 #navlist .nav-priority-link {
-   color: #136599;
+    color: #136599;
 }
 
 #navlist .nav-priority-link:hover {
@@ -194,21 +192,21 @@ label {
 }
 
 .language-link {
-    color: #dccaca;
+    /*-- color: #dccaca; --*/
+    color: #c5b9b9;
 }
 
 .language-link:hover {
     color: #fff;
 }
 
-
 /*-- MAIN --------------------------------------------------------------------*/
 
 .next-show {
-    background-color: #2548b4;
+    /*-- background-color: #2548b4; --*/
+    background-color:  #136599;
     padding: 50px 0;
     color: #c5b9b9;
-
 }
 
 .next-show-picture {
@@ -218,25 +216,24 @@ label {
     padding-bottom: 20px;
 }
 
-
-    .next-show-heading {
+.next-show-heading {
     margin-top: 0;
     padding-bottom: 20px;
 }
 
 .next-show-text {
-    
+
     font-weight: 400;
     padding-top: 15px;
 }
 
 .pad-right {
-     padding-right: 80px;
-     text-align: left;
+    padding-right: 80px;
+    text-align: left;
 }
 
 .next-show-link {
-     color: #f9f7bd;
+    color: #f9f7bd;
 }
 
 .next-show-link:hover {
@@ -249,8 +246,6 @@ label {
 
 /*-- PHOTOS --------------------------------------------------------------------*/
 
-
-
 .photo-bar {
     background: url(../images/tattoo.jpg) center no-repeat;
     -webkit-background-size: cover;
@@ -260,43 +255,15 @@ label {
     min-height: 400px;
 }
 
-
-
 /*-- INLINE KONTAKT FORM --------------------------------------------------------------------*/
-
-
 
 .form-wrapper {
     margin: 40px;
 }
 
-
 .inline-kontakt-form-input {
     height: 30px;
 }
-
-input[type="submit"] {
-    border-radius: 7px;
-}
-
-input[type="submit"]:hover {
-    background-color: #416777;
-    color: #DAE0E5;
-    transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    -webkit-transition: all .35s ease-in-out;
-    -o-transition: all .35s ease-in-out;
-}
-
-input[type="submit"]:active {
-    background-color: #DAE0E5;
-    color: #000;
-    transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    -webkit-transition: all .35s ease-in-out;
-    -o-transition: all .35s ease-in-out;
-}
-
 
 /*-- SOCIAL --------------------------------------------------------------------*/
 
@@ -305,10 +272,8 @@ input[type="submit"]:active {
     background-color: #DAE0E5;
 }
 
-
 .social-heading {
     text-align: center;
-    padding-top: 0;
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -323,12 +288,7 @@ input[type="submit"]:active {
     border-radius: 4px;
 }
 
-
-
-
-
 /*-- KONTAKT --------------------------------------------------------------------*/
-
 
 .background-picture {
     background-color: rgb(37, 72, 180);
@@ -337,30 +297,30 @@ input[type="submit"]:active {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    position: relative
 }
 
-.wedge-left {
+.saltire-left {
     float: left;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
     transform: skewX(45deg);
     position: absolute;
     left: 0px;
-    top: 105px;
+    top: 0px;
     z-index: 1;
 }
 
-.wedge-right {
+.saltire-right {
     float: right;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
     transform: skewX(-45deg);
     position: absolute;
     right: 0px;
-    top: 105px;
+    top: 0px;
     z-index: 1;
 }
 
@@ -377,15 +337,10 @@ input[type="submit"]:active {
     padding: 15px;
 }
 
-.kontakt-header {
-    margin: 20px 0;
-}
-
 .kontakt-sub {
     margin-top: 0;
     font-weight: 400;
 }
-
 
 .kontakt-list {
     list-style-type: none;
@@ -408,7 +363,8 @@ input[type="submit"]:active {
 
 .kontakt-list a:hover {
     text-decoration: none;
-    color: #333;
+    /*-- color: #333; --*/
+    color: #282828;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -450,26 +406,35 @@ input[type="submit"]:active {
 }
 
 .btn-success {
-    background-color: #22597E;
+    /*-- background-color: #22597E; --*/
+    background-color: #416777;
     border: none;
 }
 
 .btn-success:active {
     background-color: #2A7150;
-    border: none;
 }
 
 .btn-success:hover {
-    background-color: #446CA3;
-    border: none;
+    /*-- background-color: #446CA3; --*/
+    background-color: #136599;
 }
 
-.kontakt-twitter:hover {
+.kontakt-twitter {
     color: #1DA1F2;
 }
 
-.kontakt-facebook:hover {
+.kontakt-twitter:hover {
+    color: #fff;
+}
+
+
+.kontakt-facebook {
     color: #3B5998;
+}
+
+.kontakt-facebook:hover {
+    color: #fff;
 }
 
 .kontakt-container {
@@ -498,12 +463,12 @@ input[type="submit"]:active {
     background-color: #bab573;
     background-image: url('../images/burnsnight.jpg');
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     height: 700px;
 }
 
 .blue-background {
-    background-color: #95b1a9;
+    background-color: #95b1a9; /*-- palebluegrey darken x% --*/
 }
 
 .history-caption {
@@ -518,18 +483,15 @@ input[type="submit"]:active {
     font-size: 5vw;
 }
 
-
-
 /*-- TERMINE --------------------------------------------------------------------*/
-
 
 .background-formation {
     background-image: url('../images/hcpd-formation.jpg');
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     height: 100%;
     background-size: cover;
-    background-color: #507a40;
+    background-color: #507a40;   /*-- palebluegrey darken x% --*/
     margin: 0;
     padding: 0;
 }
@@ -539,8 +501,6 @@ input[type="submit"]:active {
     margin: 0;
     padding: 0;
 }
-
-
 
 /*-- SMALLPIPES --------------------------------------------------------------*/
 
@@ -580,12 +540,11 @@ footer {
 }
 
 .footer-links a {
-    text-decoration: none;
     color: #416777;
 }
 
 .footer-links a:hover {
-    color: #333;
+    color: #333;            /*-- charcoal --*/
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -594,4 +553,26 @@ footer {
 
 .newletter-input {
     width: 80%;
+}
+
+input[type="submit"] {
+    border-radius: 7px;
+}
+
+input[type="submit"]:hover {
+    background-color: #416777;
+    color: #DAE0E5;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+}
+
+input[type="submit"]:active {
+    background-color: #DAE0E5;
+    color: #000;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
 }
