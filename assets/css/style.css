@@ -7,6 +7,7 @@
 /*---- GENERAL ----------------------------------------------------------------*/
 body {
   font-size: 20px;
+  font-size: 3vmin;
   font-family: Roboto, sans-serif;
   font-weight: 300; }
 
@@ -15,7 +16,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 p {
-  font-size: 20px; }
+  font-size: 20px;
+  font-size: 3vmin;}
 
 .pale-background {
   background-color: #DAE0E5; }
@@ -49,10 +51,14 @@ label {
   width: 95vw; }
 
 .text-padding {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 20px;
   padding-bottom: 20px; }
+  
+.img-padding {
+  padding-top: 20px;
+}
 
 .center {
   display: block;
@@ -68,6 +74,12 @@ label {
   color: #136599; }
   .error-link:hover {
     color: #416777; }
+    
+.error-wrapper {
+  width: 70%;
+  margin-top: 100px;
+  border: solid 1px #ff0000;
+}
 
 /*---- NAVBAR -----------------------------------------------------------------*/
 .nav-container, .navbar {
@@ -132,6 +144,9 @@ label {
 .logo-container {
   background-color: #fafbf5;
   height: 75vh;
+}
+
+.img-mid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,9 +167,10 @@ label {
   padding: 0; }
 
 .language-link {
-  color: #c5b9b9; }
+  color: #c5b9b9;
+  padding-right: 20px;}
   .language-link:hover {
-    color: #ffffff; }
+    color: #ffffff;}
 
 /*---- MAIN -------------------------------------------------------------------*/
 .next-show {
@@ -249,7 +265,6 @@ label {
   text-decoration: none;
   color: #416777; }
   .kontakt-list a:hover {
-    
     color: #282828;
     transition: all 0.35s ease-in-out; }
 
@@ -307,7 +322,7 @@ label {
 
 .logo-background {
   padding-top: 70px;
-  background: url(../images/logo.jpg) center center no-repeat;
+  background: url(../images/logo.png) center center no-repeat;
   background-size: contain;
   height: 100vh;
   border: 0; }
@@ -337,6 +352,14 @@ label {
 
 .caption-size {
   font-size: 4vw; }
+  
+.top-border {
+  border-top: 0.5px solid #fafbf5;
+}
+
+.bottom-border {
+  border-bottom: 0.5px solid #fafbf5;
+} 
 
 /*---- TERMINE ----------------------------------------------------------------*/
 .background-formation {
@@ -387,7 +410,7 @@ footer {
       transition: all 0.35s ease-in-out; }
 
 .newletter-input {
-  width: 80%; }
+  width: 70%; }
 
 input[type="submit"] {
   border-radius: 7px; }
@@ -404,12 +427,13 @@ input[type="submit"] {
 
 @media (min-width: 768px) {
 .navbar-collapse {
-    width: 100vw; }
-    
-/* * {
+    width: 95vw; }
+}
+
+/** {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-} */
+}*/
 
 /*# sourceMappingURL=style.css.map */
