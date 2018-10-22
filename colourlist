@@ -1,0 +1,14 @@
+$color-palebluegrey: #DAE0E5;                       /*-- nav bar background --*/
+$color-facebook: #3B5998;
+$color-twitter: #1DA1F2;
+$color-youtube: #FF0000;
+$color-white: #ffffff;
+$color-darkbluegrey: #416777;
+$color-charcoal: #282828;                                     /*-- nav link --*/
+$color-offwhite: #f9f7bd                                /*-- nav link hover --*/
+$color-blue:  #136599;                                   /*-- priority link --*/
+$color-smoke: #fafbf5;
+$color-heather: #c5b9b9;                                
+$color-saltireblue: rgb(37, 72, 180)
+$color-greengrey: #2A7150;
+$color-browngrey: #bab573;

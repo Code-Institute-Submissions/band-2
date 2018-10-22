@@ -13,7 +13,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 5vmin;}
 
 p {
   font-size: 20px;
@@ -47,12 +48,9 @@ label {
 .white-text {
   color: #ffffff; }
 
-.full-width {
-  width: 95vw; }
-
 .text-padding {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 20px;
   padding-bottom: 20px; }
   
@@ -124,10 +122,11 @@ label {
 
 .navbar-text {
   margin-top: 7.5px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  }
 
 .navbar-right {
-  margin-right: 30px; }
+  margin-right: 15px; }
   
 .kontakt-link {
   color: #282828;
@@ -138,8 +137,6 @@ label {
   color: #757575;
 }
 
-
-
 /*---- LOGO -------------------------------------------------------------------*/
 .logo-container {
   background-color: #fafbf5;
@@ -149,26 +146,26 @@ label {
 .img-mid {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center;}
 
 .logo {
-  width: 35%;
-}
+  width: 75%;}
+  @media (min-width: 400px) {
+    .logo {
+      width: 55%; } }
+  @media (min-width: 800px) {
+    .logo {
+      width: 35%; } }
 
 .tartan-background {
   background: url(../images/ancient-caledonian.jpg) center;
   background-size: cover;
   height: 50px;
-  width: 100%; }
-
-.tartan-bar {
-  margin: 0;
-  padding: 0; }
+   }
 
 .language-link {
   color: #c5b9b9;
-  padding-right: 20px;}
+  }
   .language-link:hover {
     color: #ffffff;}
 
@@ -319,23 +316,23 @@ label {
 /*---- HISTORY ----------------------------------------------------------------*/
 .photo-container {
   padding: 0; }
+  
+.history-title {
+  background-color: transparent;
+}
 
 .logo-background {
-  padding-top: 70px;
   background: url(../images/logo.png) center center no-repeat;
   background-size: contain;
-  height: 100vh;
-  border: 0; }
+  height: 70vh;
+  }
   @media (min-width: 992px) {
     .logo-background {
       background-attachment: fixed; } }
 
 .burns-night {
   background-color: #bab573;
-  background-image: url("../images/burnsnight.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 700px; }
+  height: 60%; }
 
 .blue-background {
   background-color: darken #416777, 20%; }
@@ -346,13 +343,10 @@ label {
 .history-caption {
   position: absolute;
   top: 80%;
-  text-align: center;
   width: 100%;
+  font-size: 4vw;
   color: #ffffff; }
 
-.caption-size {
-  font-size: 4vw; }
-  
 .top-border {
   border-top: 0.5px solid #fafbf5;
 }
@@ -368,14 +362,12 @@ label {
   background-position: center;
   height: 100%;
   background-size: cover;
-  background-color: #1d2e35;
-  margin: 0;
-  padding: 0; }
+  background-color: #1d2e35;}
 
 .termine-background {
-  background-color: rgba(255, 255, 255, 0.55);
-  margin: 0;
-  padding: 0; }
+  background-color: rgba(255, 255, 255, 0.55); 
+  width: 100%;
+}
 
 /*---- SMALLPIPES -------------------------------------------------------------*/
 .smallpipes-caption {
@@ -427,10 +419,10 @@ input[type="submit"] {
 
 @media (min-width: 768px) {
 .navbar-collapse {
-    width: 95vw; }
+    width: 100%; }
 }
 
-/** {
+/* {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;

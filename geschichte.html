@@ -12,57 +12,50 @@
 </head>
 
 <body>
+    
     <div class="container-fluid pale-background">
-
-        <nav class="nav-container navbar-header navbar navbar-default">
-
+        <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <div class="row">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 navbar-collapse collapse title-bar" id="navbar">
-                    <ul class="nav navbar-nav" id="navlist">
-                        <li><a href="index.html" class="nav-link"><span>HOME</span></a></li>
-                        <li><a href="termine.html" class="nav-link"><span>TERMINE</span></a></li>
-                        <li><a href="geschichte.html" class="nav-link"><span>GESCHICHTE</span></a></li>
-                        <li><a href="smallpipes.html" class="nav-link"><span>&#181;hcpd</span></a></li>
-                        <li class="visible-xs"><a href="kontakt.html"><span>KONTAKT</span></a></li>
-                    </ul>
-                    <p class="navbar-text navbar-right hidden-xs"><a href="kontakt.html" class="kontakt-link"><span>KONTAKT</span></a></p>
-                </div>
+            <div class="col-xs-12 navbar-collapse collapse title-bar" id="navbar">
+                <ul class="nav navbar-nav" id="navlist">
+                    <li><a href="index.html" class="nav-link"><span>HOME</span></a></li>
+                    <li><a href="termine.html" class="nav-link"><span>TERMINE</span></a></li>
+                    <li><a href="geschichte.html" class="nav-link"><span>GESCHICHTE</span></a></li>
+                    <li><a href="smallpipes.html" class="nav-link"><span>&#181;hcpd</span></a></li>
+                    <li class="visible-xs"><a href="kontakt.html"><span>KONTAKT</span></a></li>
+                </ul>
+                <p class="navbar-text navbar-right hidden-xs"><a href="kontakt.html" class="kontakt-link">
+                        <span>KONTAKT</span></a></p>
             </div>
 
-        </nav>
     </div>
-    <!-- /.nav -->
-
-    <div class="container-fluid tartan-bar">
-        <div class="row">
-            <div class="col-md-12 tartan-background">
-                <p class="text-right"><a href="history.html" class="language-link">English</a></p>
-            </div>
-        </div>
-    </div>
-
-
-
+    </nav>
+    
     <main>
         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 tartan-background"><p class="text-right"><a href="history.html" class="language-link">English</a></p></div>
+            </div>
             <div class="row history-title">
                 <div class="col-xs-12">
-                    <h1 class="history-title">Die Geschichte unserer Band ...</h1>
+                    <h1>Die Geschichte unserer Band ...</h1>
                 </div>
-
-                <div class="logo-background">
-                    &nbsp;
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="logo-background">
+                        &nbsp;
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,7 +74,7 @@
                 <div class="col-xs-12 photo-container">
                     <img class="center canada-picture" src="assets/images/canada.jpg" alt="HCPD at The Canadian International Military tattoo">
                     <div class="history-caption">
-                        <p class="caption-size">Die HCPD am Canadian Military Tattoo</p>
+                        <p class="text-center">Die HCPD am Canadian Military Tattoo</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +122,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 burns-night">
-                    <p>&nbsp;</p>
+                    <img src="assets/images/burnsnight.jpg" class="img-responsive center-block">
                 </div>
             </div>
         </div>
@@ -184,7 +177,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-3 footer-links"><span><a href="tel:+4915205291061">+49 1520 5291061</a></span></div>
                 <div class="col-xs-12 col-md-6 footer-links">
                     <form>
-                        <input type="text" class="newletter-input" name="email" placeholder="Sign up for our newsletter" />
+                        <input type="text" required class="newletter-input" name="email" placeholder="Sign up for our newsletter" />
                         <input type="submit" value="Subscribe" />
                     </form>
                 </div>
