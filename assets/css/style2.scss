@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700');
 
 /*---- COLOURS ----------------------------------------------------------------*/
 
@@ -17,11 +17,10 @@ $saltireblue: rgb(37, 72, 180);
 $greengrey: #2A7150;
 $browngrey: #bab573;
 
-
 /*---- GENERAL ----------------------------------------------------------------*/
 
 body {
-  font-size: 2.5vmin;
+  font-size: 20px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
@@ -32,11 +31,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 2.5vmin;
+  font-size: 20px;
 }
 
 .pale-background {
-  background-color: $palebluegrey;
+    background-color: $palebluegrey;
 }
 
 a {
@@ -53,21 +52,24 @@ label {
 }
 
 .fb-link {
-  background-color: $facebook;
+    background-color: $facebook;
 }
 
 .twitter-link {
-  background-color: $facebook;
+    background-color: $twitter;
 }
 
 .yt-link {
-  background-color: $youtube;
+    background-color: $youtube;
 }
 
-.fab, .white-text {
-  color: $white;
+.fab {
+    color: $white;
 }
 
+.white-text {
+    color: $white;
+}
 .full-width {
   width: 95vw;
 }
@@ -80,15 +82,15 @@ label {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-link {
   float: right;
   padding-right: 5vw;
-  color: rgba(65, 103, 119, 0.5);
+  color: rgba($darkbluegrey, 0.5);
 }
 
 .error-link {
@@ -100,29 +102,22 @@ label {
 
 /*---- NAVBAR -----------------------------------------------------------------*/
 
-.nav-container {
-  background-color: transparent;
-  padding: 0;
+.nav-container, .navbar {
+    background-color: transparent;
+    padding: 0;
 }
 
 .navbar {
-  background-color: transparent;
-  padding: 0;
-  margin-bottom: 0;
-  border: 0;
+    margin-bottom: 0;
 }
 
 .navbar-nav {
-  margin: 7.5px 0;
-}
-
-.navbar-collapse {
-  width: 95vw;
+    margin: 7.5px 0;
 }
 
 #navbar {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-default {
@@ -144,22 +139,14 @@ label {
     border: 0;
     float: left;
     margin-left: 10px;
-    .icon-bar {
-      background-color: $darkbluegrey;
-    }
   }
 }
 
-/*.nav-link {
-  color: $charcoal;
-  &:hover {
-    color: lighten( $charcoal, 30% );
-    transition: all 0.35s ease-in-out;
-  }
-}*/
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $darkbluegrey;
+}
 
-.navbar-default .navbar-nav>li>a {
-  padding-top: 5px;
+.nav-link {
   color: $charcoal;
   &:hover {
     color: lighten( $charcoal, 30% );
@@ -167,21 +154,26 @@ label {
   }
 }
 
-.navbar-default .navbar-text {
-    color: $charcoal;
-    &:hover {
+.nav-priority-link {
+  color: $charcoal;
+  background-color: $blue;
+  &:hover {
     color: lighten( $charcoal, 30% );
     transition: all 0.35s ease-in-out;
   }
+}
+
+.nav>li>a {
+    padding-top: 5px;
 }
 
 .navbar-text {
-  margin-top: 12.5px;
-  margin-bottom: 0;
+    margin-top: 7.5px;
+    margin-bottom: 0;
 }
 
 .navbar-right {
-  margin-right: 15px;
+    margin-right: 15px;
 }
 
 /*---- LOGO -------------------------------------------------------------------*/
@@ -305,46 +297,49 @@ label {
 /*---- KONTAKT ----------------------------------------------------------------*/
 
 .background-picture {
-  background-color: $saltireblue;
+  background-color: $white;
   background: url(../images/salute.jpg) center no-repeat;
   background-size: cover;
   position: relative;
 }
 
+
+
 .kontakt-wrapper {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .kontakt {
-  padding-top: 120px;
+    padding-top: 120px;
 }
 
 .contact-details-container {
-  padding: 15px;
+    padding: 15px;
 }
 
 .kontakt-sub {
-  margin-top: 0;
-  font-weight: 400;
+    margin-top: 0;
+    font-weight: 400;
 }
 
 .kontakt-list {
-  list-style-type: none;
-  padding: 0 0 50px 0;
-  li {
+    list-style-type: none;
+    padding: 0 0 50px 0;
+}
+
+.kontakt-list li {
     font-weight: 500;
     padding: 5px 0;
-  }
 }
 
 .kontakt-FA i {
-  font-size: 28px;
+    font-size: 28px;
 }
 
 .kontakt-list a {
   text-decoration: none;
-  color: $darkbluegrey;
+  color: #416777;
   &:hover {
     text-decoration: none;
     color: $charcoal;
@@ -353,21 +348,22 @@ label {
 }
 
 .form-container {
-  padding: 15px;
+    padding: 15px;
 }
 
+
 .kontakt-form-textarea {
-  height: 150px;
+    height: 150px;
 }
 
 .inline-kontakt-form-textarea {
-  height: 100px;
+    height: 100px;
 }
 
 .kontakt-form-input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #416777;
+  border-bottom: 1px solid $darkbluegrey;
   border-radius: 0;
   outline: none;
   font-size: 20px;
@@ -421,29 +417,27 @@ label {
 }
 
 .logo-background {
-  padding-top: 70px;
-  background: url(../images/logo.jpg) center center no-repeat;
-  background-size: contain;
-  height: 100vh;
-  border: 0;
-}
+    padding-top: 70px;
+    background: url(../images/logo.jpg) center center no-repeat;
+    background-size: contain;
+    height: 100vh;
+    border: 0;
 
-@media (min-width: 992px) {
-  .logo-background {
+  @media (min-width:992px) {
     background-attachment: fixed;
   }
 }
 
 .burns-night {
   background-color: $browngrey;
-  background-image: url("../images/burnsnight.jpg");
+  background-image: url('../images/burnsnight.jpg');
   background-repeat: no-repeat;
   background-position: center;
   height: 700px;
 }
 
 .blue-background {
-  background-color: darken $darkbluegrey, 20%;
+  background-color: darken ($darkbluegrey, 20%);
 }
 
 .canada-picture {
@@ -465,12 +459,12 @@ label {
 /*---- TERMINE ----------------------------------------------------------------*/
 
 .background-formation {
-  background-image: url("../images/hcpd-formation.jpg");
+  background-image: url('../images/hcpd-formation.jpg');
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   background-size: cover;
-  background-color:darken($darkbluegrey, 20%);
+  background-color: darken($darkbluegrey, 20%);
   margin: 0;
   padding: 0;
 }
@@ -484,17 +478,18 @@ label {
 /*---- SMALLPIPES -------------------------------------------------------------*/
 
 .smallpipes-caption {
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  padding-left: 35px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    padding-left: 35px;
 }
 
+
 .picture {
-  text-align: center;
+    text-align: center;
 }
 
 .embed-responsive {
-  margin: 10px;
+    margin: 10px;
 }
 
 /*---- FOOTER -----------------------------------------------------------------*/
@@ -536,13 +531,8 @@ input[type="submit"] {
   }
   &:active {
     background-color: $palebluegrey;
-    color: black;
+    color: darken($charcoal, 25%);
     transition: all .35s ease-in-out;
   }
 }
 
-/* {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-}*/
