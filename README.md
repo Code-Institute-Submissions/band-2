@@ -140,6 +140,7 @@ The forms were checked to ensure they require fields to be filled and links open
 ### Deployment
 
 The site is deployed to Github pages from the master branch of the Github repositiry.
+  * https://petewillmott.github.io/band/index.html
 
 A local copy can be cloned from Github
   * https://github.com/PeteWillmott/band.git
