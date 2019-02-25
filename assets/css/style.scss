@@ -150,14 +150,6 @@ label {
   }
 }
 
-/*.nav-link {
-  color: $charcoal;
-  &:hover {
-    color: lighten( $charcoal, 30% );
-    transition: all 0.35s ease-in-out;
-  }
-}*/
-
 .navbar-default .navbar-nav>li>a {
   padding-top: 5px;
   color: $charcoal;
@@ -227,7 +219,8 @@ label {
 
 .next-show {
   background-color: $blue;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: $heather;
 }
 
@@ -318,6 +311,10 @@ label {
 
 .kontakt {
   padding-top: 120px;
+}
+
+.mask {
+  background-image: linear-gradient(rgba( $white, .6 ), rgba( $white, .2 ));
 }
 
 .contact-details-container {
@@ -424,21 +421,19 @@ label {
   padding-top: 70px;
   background: url(../images/logo.jpg) center center no-repeat;
   background-size: contain;
-  height: 100vh;
+  height: 200px;
   border: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .logo-background {
     background-attachment: fixed;
+    height: 100vh;
   }
 }
 
 .burns-night {
   background-color: $browngrey;
-  background-image: url("../images/burnsnight.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   height: 700px;
 }
 
@@ -478,7 +473,6 @@ label {
 .termine-background {
   background-color: rgba($white, 0.55);
   margin: 0;
-  padding: 0;
 }
 
 /*---- SMALLPIPES -------------------------------------------------------------*/
@@ -540,9 +534,3 @@ input[type="submit"] {
     transition: all .35s ease-in-out;
   }
 }
-
-/* {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-}*/
