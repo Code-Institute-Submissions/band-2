@@ -67,16 +67,13 @@ As a fan I can learn more about the band in `Geschichte.html` or `smallpipes.htm
                                             
 As a fan I can access or discover the HCPD's social media presence via the `footer`
 
-As a fan I can hear music and see video via `smallpipes.html`*
+As a fan I can hear music and see video via `smallpipes.html`
 
----
-\*   Practical Considerations
-
-Audio and video files would obviously support the objective of this website and so benefit the band, however
-the desired audio and video footage  of the HCPD are not currently available due to technical constraints 
+Due to practical considerations while audio and video files would obviously support the objective of this website and so benefit the band,
+the desired audio and video footage  of the HCPD are not currently available due to constraints 
 regarding recording quality. An audio recording 
-and a YouTube clip were included as examples.     
----
+and a YouTube clip were included as examples.  
+
 
 Given the four or five page brief the structure is necessarily simple. A flat structure with a collapsible 
 top navigation bar provides efficient and intuitive navigation.
@@ -136,9 +133,19 @@ HTML5, CSS3 & SCSS
 ### Testing
 
 The website has been tested on Mac and Windows laptops, an android tablet, an iPad, an android phone and an iPhone
-using a mixture of Chrome, Firefox, Edge and Safari.
+using a mixture of Chrome, Firefox, Edge and Safari to ensure reasonable compatability and responsiveness.
+
+The forms were checked to ensure they require fields to be filled and links open in a new tab. 
 
 ### Deployment
+
+The site is deployed to Github pages from the master branch of the Github repositiry.
+
+A local copy can be cloned from Github
+  * https://github.com/PeteWillmott/band.git
+ 
+`git remote rm origin` will sever the link back to the repository.
+  
 
 ### Credits
 
