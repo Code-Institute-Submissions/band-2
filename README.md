@@ -10,7 +10,7 @@ as in micrograms (µg).The µ's are the band members who play the small pipes, a
 The HCPD are an actual band, please bear this in mind 
 when carrying out any testing, especially regarding contact details.
  
-The [project brief](https://courses.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/c75714c9636b4cf59120d60acbec6ffd/f851a16813f14b3aae7bd1e6560443cd/) required the following items.
+The [project brief](https://courses.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/c75714c9636b4cf59120d60acbec6ffd/f851a16813f14b3aae7bd1e6560443cd/?activate_block_id=block-v1%3Acodeinstitute%2BFE%2B2017_T3%2Btype%40sequential%2Bblock%40f851a16813f14b3aae7bd1e6560443cd) required the following items.
 
 * Photos of the band members
 * A video clip
